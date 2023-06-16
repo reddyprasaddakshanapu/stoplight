@@ -5,7 +5,9 @@
     "description": "This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about The Pet Store at repository https://github.com/swagger-api/swagger-petstore",
     "termsOfService": "http://swagger.io/terms/",
     "contact": {
-      "email": "apiteam@swagger.io"
+      "name": "Reddi Prasad",
+      "email": "apiteam@swagger.io",
+      "url": "https://apibuild.stoplight.io/studio/stoplight"
     },
     "license": {
       "name": "Apache 2.0",
@@ -152,6 +154,9 @@
                 }
               }
             }
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "405": {
             "description": "Invalid input"
@@ -348,7 +353,7 @@
           "pet"
         ],
         "summary": "Updates a pet in the store with form data",
-        "description": "",
+        "description": "Updates a pet in the store with form data",
         "operationId": "updatePetWithForm",
         "parameters": [
           {
@@ -379,6 +384,9 @@
           }
         ],
         "responses": {
+          "201": {
+            "description": "Created"
+          },
           "405": {
             "description": "Invalid input"
           }
@@ -397,13 +405,13 @@
           "pet"
         ],
         "summary": "Deletes a pet",
-        "description": "",
+        "description": "Deletes a pet",
         "operationId": "deletePet",
         "parameters": [
           {
             "name": "api_key",
             "in": "header",
-            "description": "",
+            "description": "api key",
             "required": false,
             "schema": {
               "type": "string"
@@ -421,6 +429,9 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "400": {
             "description": "Invalid pet value"
           }
@@ -441,7 +452,7 @@
           "pet"
         ],
         "summary": "uploads an image",
-        "description": "",
+        "description": "uploads an image",
         "operationId": "uploadFile",
         "parameters": [
           {
@@ -635,7 +646,7 @@
           }
         ],
         "responses": {
-          "400": {
+          "200": {
             "description": "Invalid ID supplied"
           },
           "404": {
@@ -673,7 +684,7 @@
           }
         },
         "responses": {
-          "default": {
+          "201": {
             "description": "successful operation",
             "content": {
               "application/json": {
@@ -739,7 +750,7 @@
           "user"
         ],
         "summary": "Logs user into the system",
-        "description": "",
+        "description": "Logs user into the system",
         "operationId": "loginUser",
         "parameters": [
           {
@@ -805,11 +816,11 @@
           "user"
         ],
         "summary": "Logs out current logged in user session",
-        "description": "",
+        "description": "Logs out current logged in user session",
         "operationId": "logoutUser",
         "parameters": [],
         "responses": {
-          "default": {
+          "200": {
             "description": "successful operation"
           }
         }
@@ -821,7 +832,7 @@
           "user"
         ],
         "summary": "Get user by user name",
-        "description": "",
+        "description": "Get user by user name",
         "operationId": "getUserByName",
         "parameters": [
           {
@@ -897,7 +908,7 @@
           }
         },
         "responses": {
-          "default": {
+          "200": {
             "description": "successful operation"
           }
         }
@@ -921,6 +932,9 @@
           }
         ],
         "responses": {
+          "200": {
+            "description": "OK"
+          },
           "400": {
             "description": "Invalid username supplied"
           },
