@@ -264,7 +264,7 @@
             "description": "Not Found"
           }
         },
-        "description": "API to get All users"
+        "description": "API to get All users from Users API"
       },
       "post": {
         "tags": [
