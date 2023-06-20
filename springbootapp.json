@@ -85,7 +85,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "API to get Customers"
       },
       "post": {
         "tags": [
@@ -182,7 +183,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "API to get All Posts"
       },
       "post": {
         "tags": [
@@ -261,7 +263,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "API to get All users"
       },
       "post": {
         "tags": [
