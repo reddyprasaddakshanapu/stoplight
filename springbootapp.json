@@ -116,7 +116,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "API to add new customer"
       }
     },
     "/api/v1/logout": {
@@ -228,7 +229,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "API to add posts to post API"
       }
     },
     "/api/v1/users": {
@@ -308,7 +310,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "API to add new User"
       }
     }
   },
