@@ -53,7 +53,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "description": "This simple root API"
       }
     },
     "/api/v1/customers": {
